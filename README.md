@@ -30,6 +30,23 @@ def calculate_total_price(item_price, tax):
 - **유사한 개념은 유사한 표기법을 사용한다.**  
   - 예: 한 모듈에서 `XYZControllerForEfficientHandlingOfString` 사용하고, `XYZControllerForEfficientStorageOfString` 사용한다면, 차이를 보기 힘들다.
 
+    ```python
+    # Bad
+def load_user_data():
+    pass
+
+def fetch_user_information():
+    pass
+
+# Good
+def load_user_data():
+    pass
+
+def load_user_preferences():
+    pass
+
+```
+
 - **의미 있게 구분하라**  
   - 컴파일러나 인터프리터만 통과하려는 생각으로 코드를 구현하는 것은 문제를 일으킨다.
   - 동일한 범위 안에서는 다른 두 개념에 같은 이름을 사용 못함. 그래서 프로그래머가 한쪽 이름을 마음대로 바꾼다면 오류가 생김.
