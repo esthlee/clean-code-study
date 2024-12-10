@@ -10,7 +10,7 @@
   - 수행 기능은?
   - 사용 방법은?
 
-'''python 
+```python
 # Bad
 def c(a, b):
     return a + b
