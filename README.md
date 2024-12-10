@@ -18,7 +18,7 @@ def c(a, b):
 # Good
 def calculate_total_price(item_price, tax):
     return item_price + tax
-
+```
 
 - **그릇된 단서를 피하라**  
   - 나름대로 널리 쓰이는 의미가 있는 단어를 다른 의미로 사용해도 안된다.  
