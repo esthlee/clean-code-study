@@ -30,7 +30,7 @@ def calculate_total_price(item_price, tax):
 - **유사한 개념은 유사한 표기법을 사용한다.**  
   - 예: 한 모듈에서 `XYZControllerForEfficientHandlingOfString` 사용하고, `XYZControllerForEfficientStorageOfString` 사용한다면, 차이를 보기 힘들다.
 
-    ```python
+```python
     # Bad
 def load_user_data():
     pass
@@ -79,7 +79,13 @@ def load_user_preferences():
       - 인터페이스 이름은 접두어를 붙이지 않는 편이 주의를 흐트리고 과도한 정보 제공하기 때문이다.  
       - 인터페이스 클래스와 구현 클래스 이름 중 하나를 인코딩해야 한다면, 구현 클래스가 적합하다.  
         - 예: `ShapeFactoryImp`, `CShapeFactory`가 `IShapeFactory`보다 좋다.
+```python
+# Bad
+m_userName = "John"
 
+# Good
+user_name = "John"
+```
 - **자신의 기억력을 자랑하지 마라**  
   - 문자 하나만 사용한 변수 이름 `i`, `j`, `k`는 괜찮지만, `l`은 절대 안된다.  
     단, 루프 범위가 아주 작고 다른 이름과 충돌하지 않을 때만.
