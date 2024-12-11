@@ -67,6 +67,7 @@ def load_user_preferences():
 - **인코딩을 피해라**  
   - 변수 이름에 타입을 인코딩할 필요가 없다.
     - 예: `PhoneNumber phoneString;` // 타입이 바뀌어도 이름은 바뀌지 않는다.
+
       ```python
       # Bad: 데이터 타입 기반 접두어
       strUserName = "John"   # str indicates a string
@@ -76,7 +77,8 @@ def load_user_preferences():
       # Good: Python은 변수의 타입을 명시할 필요가 없음
       user_name = "John"
       user_age = 30
-      user_height = 5.9 ```
+      user_height = 5.9
+      ```
 
   - 멤버 변수 접두어  
     - 멤버 변수에 `m_`이라는 접두어 붙일 필요 없다.  
