@@ -89,7 +89,7 @@ def load_user_preferences():
     - 예: 도형을 생성하는 `ABSTRACT FACTORY`를 구현한다고 가정했을 때, 이 팩토리는 인터페이스 클래스, 구현은 구체 클래스에서 한다.  
       - 인터페이스 이름은 접두어를 붙이지 않는 편이 주의를 흐트리고 과도한 정보 제공하기 때문이다.  
       - 인터페이스 클래스와 구현 클래스 이름 중 하나를 인코딩해야 한다면, 구현 클래스가 적합하다.  
-        - 예: `ShapeFactoryImp`, `CShapeFactory`가 `IShapeFactory`보다 좋다.
+        - 예: 인터페이스 클래스는 `ShapeFactoryImp`, `CShapeFactory`가 `IShapeFactory`보다 좋다.
 
 - **자신의 기억력을 자랑하지 마라**  
   - 루프에서 반복 횟수를 세는 문자 하나만 사용한 변수 이름 `i`, `j`, `k`는 괜찮지만, `l`은 절대 안된다. 
