@@ -46,11 +46,9 @@ def delete_folder_contents(folder_path):
 
     print("!!! 주의: 폴더 내 모든 내용이 삭제됩니다. 실행 전에 경로를 다시 확인하세요. !!!")
 
-    ```
 
 
-
-- @Ignore 속성을 이용해 테스트 케이스를 끈다. 구체적인 설명은 @Ignore (“실행이 너무 오래 걸린다.”) 라고 쓴다. -> Java
+- @Ignore 속성을 이용해 테스트 케이스 끈다. 구체적인 설명은 @Ignore (“실행이 너무 오래 걸린다.”) 라고 쓴다. -> Java
 ```python 
 import unittest
 
