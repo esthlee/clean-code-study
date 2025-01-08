@@ -91,6 +91,9 @@ def make_version():
     pass  # 현재 기능이 필요하지 않음```
 
 
+
+
+
 7. 중요성을 강조하는 주석 
 ```python 
 def process_item(item):
@@ -104,7 +107,6 @@ def process_item(item):
     
     # 공백 제거 후 항목 처리
     print(f"처리된 항목: '{item}'")
-
 
 # 테스트 코드
 if __name__ == "__main__":
@@ -172,6 +174,7 @@ def add(a, b):
 def subtract(a, b):
     """두 숫자를 빼는 함수."""
     return a - b ```
+
 
 7. 닫는 괄호에 다는 주석 
 - 중첩이 심하고 장황한 함수라면 의미가 있을지도 모르지만, 작고 캡슐화된 함수에는 잡음이다. 
