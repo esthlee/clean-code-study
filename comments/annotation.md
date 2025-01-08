@@ -88,8 +88,7 @@ def make_version():
     버전 정보를 생성하는 함수.
     현재는 구현되지 않음. 체크아웃 모델 도입 시 필요하지 않게 될 예정입니다.
     """
-    pass  # 현재 기능이 필요하지 않음
-```python 
+    pass  # 현재 기능이 필요하지 않음```
 
 
 7. 중요성을 강조하는 주석 
@@ -110,8 +109,7 @@ def process_item(item):
 # 테스트 코드
 if __name__ == "__main__":
     raw_item = "   중요한 리스트 항목   "  # 공백이 포함된 문자열
-    process_item(raw_item)
-```python 
+    process_item(raw_item)``` 
 
 ## 나쁜 주석 
 1. 주절거리는 주석 
