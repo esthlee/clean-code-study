@@ -108,7 +108,9 @@ def process_item(item):
 # 테스트 코드
 if __name__ == "__main__":
     raw_item = "   중요한 리스트 항목   "  # 공백이 포함된 문자열
-    process_item(raw_item)``` 
+    process_item(raw_item)
+``` 
+
 
 ## 나쁜 주석 
 1. 주절거리는 주석 
