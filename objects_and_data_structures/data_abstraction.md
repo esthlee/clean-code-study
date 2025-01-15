@@ -29,6 +29,8 @@ public interface Point {
 ```
 - 장점: 내부 구현 방식(x, y → r, theta 변경 등)이 바뀌더라도 외부에 영향을 주지 않음.
 
+<br>
+
 ## 2. 자료/객체 비대칭 (Data/Object Anti-Symmetry)
 
 ### **자료와 객체의 차이**
@@ -40,6 +42,8 @@ public interface Point {
 - 객체는 동작을 중심으로 설계하고, 자료를 숨겨야 유지보수가 쉬움.
 - 자료 구조는 자료를 표현하는 데 집중해야 단순함을 유지할 수 있음.
 - 두 설계 방식을 적절히 구분하면 코드의 명확성과 유연성이 증가함.
+
+<br>
 
 ## 3. 디미터 법칙 (The Law of Demeter)
 
@@ -58,6 +62,8 @@ final String outputDir = scratchDir.getAbsolutePath();
 ```
 - 장점: 호출이 단순화되고, 객체 간 의존성을 줄임.
 
+<br>
+
 ## 4. 자료 전달 객체 (DTO: Data Transfer Object)
 
 ### **DTO란?**
@@ -73,6 +79,8 @@ public class Address {
 }
 ```
 - Address 객체는 데이터를 담아 전달하는 용도로만 사용.
+
+<br>
 
 ## 5. 요약
 
