@@ -101,8 +101,7 @@ print_circle_area(5)
         return [item.strip() for item in data if isinstance(item, str)]
 
     def _transform_data(self, data):
-        return [item.upper() for item in data]
-```
+        return [item.upper() for item in data]```
   
 ## 가로 형식 맞추기
 
@@ -112,19 +111,18 @@ print_circle_area(5)
 
 - **공백을 활용하여 밀집한 개념과 느슨한 개념을 구분**:
   - 할당연산자를 강조하려고 앞뒤 공백을 준다. 할당문은 왼쪽 요소와 오른쪽 요소가 분명히 나뉜다.
-```python
-numbers    = [1, 2, 3, 4, 5]
-person     = {"name": "Bob", "age": 30}
-is_active  = True
-```
+    ```python
+    numbers    = [1, 2, 3, 4, 5]
+    person     = {"name": "Bob", "age": 30}
+    is_active  = True
+    ```
   - 함수 이름과 이어지는 괄호 사이에는 공백을 넣지 않는다. 함수와 인수는 서로 밀접하기 때문이다. (파이썬 PEP 8 스타일 가이드) 
     ```python
     def greet(name):
     return f"Hello, {name}!"
 
     message = greet("Alice")
-    print(message)
-```
+    print(message)```
 
 ### 가로 정렬
 
