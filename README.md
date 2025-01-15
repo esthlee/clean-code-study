@@ -9,4 +9,10 @@
 - [Small!](./functions/small.md)
 
 ### Comments
-- [Comments Do Not Make Up for Bad Code](./comments/comments_do_not_make_up_for_bad_code.md)
+- [Comments Do Not Make Up for Bad Code](./comments/annotation.md)
+
+### Formatting
+- [The Purpose of Formatting](./formatting/formatting.md)
+
+### Objects and Data Structures
+- [Data Abstraction](./objects_and_data_structures/data_abstraction.md)
