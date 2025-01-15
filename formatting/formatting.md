@@ -27,7 +27,8 @@ filtered_data = [x for x in transformed_data if x > 5]
 
 print("Original Data:", data)
 print("Transformed Data:", transformed_data)
-print("Filtered Data:", filtered_data)```
+print("Filtered Data:", filtered_data)
+```
 
 ### 세로 밀집도
 
