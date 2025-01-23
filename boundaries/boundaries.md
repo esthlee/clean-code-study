@@ -98,7 +98,8 @@ def test_logging_basic():
 
 # 학습 테스트 실행
 if __name__ == "__main__":
-    test_logging_basic()```
+    test_logging_basic()
+```
 
 ## 아는 코드와 모르는 코드를 분리하는 경계
 - 우리가 필요한 인터페이스를 정의하면 코드는 훨씬 깔끔해지고, 가독성은 높아진다.
