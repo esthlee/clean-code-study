@@ -16,3 +16,6 @@
 
 ### Objects and Data Structures
 - [Data Abstraction](./objects_and_data_structures/data_abstraction.md)
+
+### Error Handling
+- [Use Exceptions Rather Than Return Codes](./error_handling/use_exceptions_rather_than_return_codes.md)
