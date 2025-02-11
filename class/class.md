@@ -72,4 +72,85 @@ print(car.drive())```
 - 이는 새로운 클래스로 쪼개야한다는 신호. 응집도가 높아지도록 변수와 메서드를 적절히 분리해 새로운 클래스 두세개로 쪼개준다.
 
 ### 응집도를 유지하면 작은 클래스 여럿이 나온다. 
+- 큰 함수를 작은 함수 여럿으로 쪼개면, 체계가 더 잡히고, 구조가 투명해진다.
+```python
+class DataCleaner:
+    """데이터 정리: 공백 제거 및 소문자로 변환"""
+    @staticmethod
+    def clean(data):
+        return [x.strip().lower() for x in data if x]
 
+class DataFilter:
+    """필터링: 특정 길이 이상의 데이터만 남김"""
+    @staticmethod
+    def filter(data, min_length=3):
+        return [x for x in data if len(x) > min_length]
+
+class DataAnalyzer:
+    """데이터 분석: 평균 길이 계산"""
+    @staticmethod
+    def calculate_avg_length(data):
+        return sum(len(x) for x in data) / len(data) if data else 0
+
+class DataProcessor:
+    """각 클래스를 조합하여 전체적인 데이터 처리"""
+    def __init__(self, data):
+        self.data = data
+
+    def process(self):
+        self.data = DataCleaner.clean(self.data)
+        self.data = DataFilter.filter(self.data)
+        avg_length = DataAnalyzer.calculate_avg_length(self.data)
+        return self.data, avg_length
+
+data = ["  Apple ", "banana", "", "KiWi", "  ", "orange"]
+processor = DataProcessor(data)
+print(processor.process())
+
+```
+
+## 변경하기 쉬운 클래스 
+- 함수 하나를 수정하고 다른 함수가 망가질 위험이 가장 크기 때문에, 클래스를 서로 분리해야한다.
+- 새 기능을 수정하거나 기존 기능을 변경할 때 건드릴 코드가 최소인 시스템 구조가 바람직하다.
+```python
+class DataCleaner:
+    def clean(self, data):
+        return [x.strip().lower() for x in data if x]  
+
+class DataFilter:
+    def filter(self, data):
+        return [x for x in data if len(x) > 3]
+
+class DataAnalyzer:
+    def analyze(self, data):
+        return sum(len(x) for x in data) / len(data) if data else 0  # 기본 구현
+class DataProcessor:
+
+    def __init__(self, data, cleaner=None, filterer=None, analyzer=None):
+        self.data = data
+        self.cleaner = cleaner or DataCleaner()
+        self.filterer = filterer or DataFilter()
+        self.analyzer = analyzer or DataAnalyzer()
+
+    def process(self):
+        self.data = self.cleaner.clean(self.data)
+        self.data = self.filterer.filter(self.data)
+        avg_length = self.analyzer.analyze(self.data)
+        return self.data, avg_length
+
+data = ["  Apple ", "banana", "", "KiWi", "  ", "orange"]
+
+processor = DataProcessor(data)
+print(processor.process())
+
+class CustomFilter(DataFilter):
+    def filter(self, data):
+        return [x for x in data if "a" in x]  # 'a'가 포함된 단어만 남김
+
+processor_custom = DataProcessor(data, filterer=CustomFilter())
+print(processor_custom.process())
+```
+
+### 변경으로부터 격리
+- 결합도가 낮은 시스템이란, 각 시스템 요소가 다른 요소로부터 그리고 변경으로부터 잘 격리되어 있다는 뜻.
+- 결합도를 최소로 줄이면, 유연성과 재사용성은 높아진다. 
