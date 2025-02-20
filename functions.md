@@ -1,4 +1,4 @@
-## Chapter 3: 함수 (Functions)
+# 3장 함수
 
 ### 작게 만들어라 (Small!)
 

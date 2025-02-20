@@ -1,4 +1,4 @@
-# Chapter 6: Objects and Data Structures
+# 6장 객체와 자료 구조
 
 ## 1. 자료 추상화 (Data Abstraction)
 

@@ -1,4 +1,4 @@
-# Chapter 7: Error Handling
+# 7장 오류 처리
 
 ## 핵심 원칙
 
