@@ -11,3 +11,5 @@
 - [Unit Tests](./unit_tests.md)
 - [Classes](./classes.md)
 - [Systems](./systems.md)
+- [Emergence](./emergence.md)
+- [Concurrency](./concurrency.md)
